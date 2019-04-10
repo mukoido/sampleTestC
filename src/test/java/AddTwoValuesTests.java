@@ -28,6 +28,28 @@ public class AddTwoValuesTests {
         assertEquals("-10 + -5 must be -15", -15, calc.add(-10, -5));
     }
 
+    @Test
+    public void testMultiplyTwoValues() {
+        assertEquals("10 * 5 must be 50", 50, calc.multiply(10, 5));
+    }
+    @Test
+    public void testDivisionTwoValues() {
+        assertEquals("10 / 5 must be 2", 2.0, calc.division(10, 5));
+    }
+    @Test
+    public void testSubtractionTwoValues() {
+        assertEquals("10 - 5 must be 8", 5.0, calc.division(10, 2));
+    }
+
+    @Test
+    public void testX2() {
+        assertEquals("2*2 must be 4", 4.0, calc.powTwo(2));
+    }
+
+    @Test
+    public void squareRoot() {
+        assertEquals("squareRoot from 4 must be 2", 2.0, calc.squareRoot(4));
+    }
     //TODO
     //add new tests for add() method
 
